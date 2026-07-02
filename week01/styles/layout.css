@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #0B4F6C;
+    /* Deep river blue */
+    --secondary-color: #01607b;
+    /*Bright water blue */
+    --accent1-color: #11662d;
+    /* Forest green */
+    --accent2-color: #ffe2a9;
+    /* Adventure gold  */
+    --text1-color: #ece7e7;
+    --text2-color: #262525;
+
+    --heading-font: 'Trebuchet MS', sans-serif;
+    --body-font: 'Arial', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: grid;
+    grid-template: auto 1fr auto / 1fr 1fr 1fr 1fr;
+    width: 1000px;
+    margin: 0 auto;
+    font-family: var(--body-font);
+}
+
+header {
+    padding: 2rem;
+    grid-column: 1 / 5;
+    background-color: var(--primary-color);
+    color: var(--text1-color);
+}
+
+
+nav {
+    background-color: var(--accent1-color);
+    padding: 1.5rem;
+    grid-column: 1 / 5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+
+}
+
+main-content,
+aside {
+    height: 500px;
+    display: flex;
+    justify-content: left;
+    font: var(--heading-font);
+    padding: 1rem;
+}
+
+main-content {
+    grid-column: 1 / 4;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+
+}
+
+aside {
+    grid-column: 4 / 5;
+    background-color: var(--accent2-color);
+
+}
+
+footer {
+    grid-column: 1 / 5;
+    background-color: var(--primary-color);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--text1-color);
+}
