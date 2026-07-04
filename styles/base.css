@@ -22,6 +22,10 @@
 
 }
 
+header {
+    width: 100%;
+}
+
 #course-title {
     display: block;
     text-align: center;
@@ -69,22 +73,25 @@ nav a:hover {
     color: var(--accent1-color);
 }
 
+main {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
 
 h1 {
     display: block;
     text-align: center;
     padding: 2rem;
-
 }
 
 
 #cardHolder {
-    width: 1400px;
     display: grid;
     grid-template: 2fr / 2fr 1fr;
     justify-self: center;
     gap: 1rem;
-
 }
 
 .card {
