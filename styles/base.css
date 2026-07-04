@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #0B4F6C;
+    /* Deep river blue */
+    --secondary-color: #01607b;
+    /*Bright water blue */
+    --accent1-color: #11662d;
+    /* Forest green */
+    --accent2-color: #ffe2a9;
+    /* Adventure gold  */
+    --text1-color: #ece7e7;
+    --text2-color: #262525;
+
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sansation", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    height: auto;
+    color: var(--text1-color);
+    font-size: 1.5em;
+
+}
+
+
+nav {
+
+    background-color: var(--accent1-color);
+    font-size: 1.25em;
+
+}
+
+nav ul {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    display: block;
+    text-align: center;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: var(--accent1-color);
+}
+
+
+h1 {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+
+#cardHolder {
+    width: 1400px;
+    display: grid;
+    grid-template: 2fr / 2fr 1fr;
+    justify-self: center;
+    gap: 1rem;
+
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: solid 1px;
+
+}
+
+.card h2 {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+
+}
+
+#aboutMe {
+    display: grid;
+    grid-template: 1fr 4fr 1fr 4fr / 1fr 3fr 2fr;
+
+}
+
+#aboutMe h2 {
+    grid-column: 1 / 4;
+
+}
+
+#about {
+    grid-column: 1 / 3;
+    padding: 1rem;
+    line-height: 2em;
+}
+
+#picSJ {
+    grid-column: 3 / 4;
+    padding: 1rem;
+
+}
+
+#aboutMe h3 {
+    grid-column: 1 / 4;
+    justify-self: center;
+    text-align: center;
+    border-bottom: 1px solid;
+    font-weight: 800;
+    width: 300px;
+}
+
+
+#flag {
+    grid-column: 1 / 2;
+    padding: 1rem;
+}
+
+
+#flag img {
+    width: 200px;
+}
+
+#flag figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+#from {
+    grid-column: 2 / 3;
+    padding: 1rem;
+    line-height: 1.5em;
+}
+
+#webCard {
+    display: flex;
+    flex-direction: column;
+}
+
+#webResources {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+#webResources li {
+    padding: .5rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+    height: 75px;
+    padding: 1rem;
+    line-height: 1.5em;
+}
