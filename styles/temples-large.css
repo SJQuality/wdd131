@@ -29,15 +29,6 @@
     }
 
 
-    /* .navigation ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: right;
-
-    } */
-
-
     .navigation a {
         display: block;
         padding: .5rem 1rem;
