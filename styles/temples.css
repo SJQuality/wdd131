@@ -63,7 +63,6 @@ header {
 
 }
 
-
 .navigation.open {
     display: block;
 }
@@ -73,10 +72,11 @@ header {
     list-style: none;
     margin: 0;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation.open li {
-
     justify-content: space-around;
 
 }
@@ -115,7 +115,6 @@ main {
 #temples {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
 }
 
 figure {
