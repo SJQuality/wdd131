@@ -7,5 +7,42 @@
 
     }
 
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: .25rem;
+    }
+
+
+    .navigation {
+        display: block;
+        position: relative;
+        text-justify: center;
+        margin-left: auto;
+        background-color: var(--primary-color);
+    }
+
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: right;
+
+    }
+
+
+    .navigation a {
+        display: block;
+        padding: .5rem 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
 
 }

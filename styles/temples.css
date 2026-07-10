@@ -21,6 +21,11 @@
 header {
     position: relative;
     background-color: var(--primary-color);
+    padding: 1rem;
+
+}
+
+.site-title {
     color: var(--text1-color);
     font-size: 2em;
     padding: 1rem;
@@ -47,25 +52,22 @@ header {
 
 }
 
-nav {
+
+.navigation {
+    display: none;
+    list-style: none;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 100%;
     right: 0;
 
-    display: none;
 }
 
-.navigation {
-
-    list-style: none;
-
-    background-color: var(--secondary-color);
-    display: none;
-}
 
 .navigation.open {
     display: block;
 }
+
 
 .navigation ul {
     list-style: none;
@@ -74,7 +76,7 @@ nav {
 }
 
 .navigation.open li {
-    display: flex;
+
     justify-content: space-around;
 
 }
@@ -83,6 +85,7 @@ nav {
     display: block;
     padding: .5rem 1rem;
     color: white;
+    font-size: 2em;
     text-decoration: none;
 
 }
