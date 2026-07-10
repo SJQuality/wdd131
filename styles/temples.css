@@ -85,7 +85,7 @@ nav.open li {
 nav.open a {
     display: block;
     padding: .5rem 1rem;
-    color: white;
+    color: #fff;
     font-size: 2em;
     text-decoration: none;
 
