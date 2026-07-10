@@ -19,27 +19,20 @@
 
 
     nav {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: right;
+        display: block;
         position: relative;
         margin-left: auto;
         background-color: var(--primary-color);
     }
 
-    .navigation ul {
+    nav ul {
         display: flex;
         flex-direction: row;
         list-style: none;
-        justify-content: right;
-        position: relative;
-        margin-left: auto;
-        background-color: var(--primary-color);
     }
 
 
-    .navigation a {
+    nav a {
         display: block;
         padding: .5rem 1rem;
         color: white;

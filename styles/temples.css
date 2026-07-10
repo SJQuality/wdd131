@@ -64,14 +64,14 @@ nav {
 
 }
 
-.navigation.open {
+nav.open {
     display: block;
     display: flex;
     flex-direction: column;
 }
 
 
-.navigation ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 1rem;
@@ -79,12 +79,12 @@ nav {
     flex-direction: column;
 }
 
-.navigation.open li {
+nav.open li {
     justify-content: space-around;
 
 }
 
-.navigation.open a {
+nav.open a {
     display: block;
     padding: .5rem 1rem;
     color: white;
@@ -93,7 +93,7 @@ nav {
 
 }
 
-.navigation a:hover {
+nav a:hover {
     text-decoration: underline double;
     background-color: var(--accent2-color);
     color: #000;
