@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #0B4F6C;
+    /* Deep river blue */
+    --secondary-color: #01607b;
+    /*Bright water blue */
+    --accent1-color: #11662d;
+    /* Forest green */
+    --accent2-color: #ffe2a9;
+    /* Adventure gold  */
+    --text1-color: #ece7e7;
+    --text2-color: #262525;
+
+
+}
+
+* {
+    --font-family: "Fira Sans", sans-serif;
+}
+
+/* ******************Header/Nav****************** */
+header {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--text1-color);
+    font-size: 2em;
+    padding: 1rem;
+
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--accent1-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--text1-color);
+}
+
+#menu.open::before {
+    content: "\2715";
+
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display: none;
+}
+
+.navigation {
+
+    list-style: none;
+
+    background-color: var(--secondary-color);
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.navigation.open li {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navigation.open a {
+    display: block;
+    padding: .5rem 1rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navigation a:hover {
+    text-decoration: underline double;
+    background-color: var(--accent2-color);
+    color: #000;
+}
+
+
+.active {
+    color: var(--accent1-color);
+}
+
+/* ******************Main****************** */
+
+h1 {
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+figure {
+    margin: auto;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    padding: .5rem;
+}
+
+/* ******************Footer****************** */
+
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+    height: 75px;
+    padding: 1rem;
+    line-height: 1.5em;
+}
