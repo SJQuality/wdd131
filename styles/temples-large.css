@@ -19,20 +19,23 @@
 
 
     .navigation {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: right;
         position: relative;
         margin-left: auto;
         background-color: var(--primary-color);
     }
 
 
-    .navigation ul {
+    /* .navigation ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         justify-content: right;
 
-    }
+    } */
 
 
     .navigation a {

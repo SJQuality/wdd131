@@ -65,16 +65,18 @@ header {
 
 .navigation.open {
     display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.navigation ul {
+/* .navigation ul {
     list-style: none;
     margin: 0;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .navigation.open li {
     justify-content: space-around;
