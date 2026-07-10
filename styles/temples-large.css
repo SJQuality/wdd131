@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     #temples {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -21,7 +21,6 @@
     .navigation {
         display: block;
         position: relative;
-        text-justify: center;
         margin-left: auto;
         background-color: var(--primary-color);
     }
