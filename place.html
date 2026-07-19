@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Stephen Jones</title>
+    <meta name="author" content="Stephen Jones" />
+    <meta name="description" content="This is the current demographic and weather infromation for Murfreesboro, TN" />
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer> </script>
+    <script src="scripts/place.js" defer> </script>
+</head>
+
+<body>
+    <header>
+        <h1>Murfreesboro, TN</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/large-murfreesboro.webp" media="(min-width: 801px)">
+                <img src="images/small-murfreesboro.webp" alt="Downtown Murfreesboro">
+            </picture>
+
+            <div id="info">
+                <section id="data">
+                    <h2>Data</h2>
+                    <ul class="data-list">
+                        <li class="label">Location:</li>
+                        <li>Southeast of Nashville, TN</li>
+
+                        <li class="label">Area:</li>
+                        <li>64.9 square miles</li>
+
+                        <li class="label">Population:</li>
+                        <li>175,165</li>
+
+                        <li class="label">County:</li>
+                        <li>Rutherford</li>
+                    </ul>
+                </section>
+                <section id="weather">
+                    <h2>Weather</h2>
+                    <img src="images/rainy.svg" alt="Rainy weather" class="weather-icon">
+                    <ul class="data-list">
+                        <li class="label">Temperature:</li>
+                        <li><span id="temp">30</span>&deg;F</li>
+
+                        <li class="label">Conditions:</li>
+                        <li>Rainy</li>
+
+                        <li class="label">Wind:</li>
+                        <li id="wind">5 mph</li>
+
+                        <li class="label">Wind Chill:</li>
+                        <li><span id="windChill"></span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Stephen Jones | Georgia, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
