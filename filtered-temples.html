@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="author" content="Stephen Jones">
+    <meta name="description" content="An album of many LDS Temples with descriptions and locations.">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large .css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer> </script>
+    <script src="scripts/getdates.js" defer> </script>
+</head>
+
+<body>
+    <header>
+        <span class="site-title">Temple Album</span>
+        <button id="menu" title="Main Menu"> </button>
+        <nav>
+            <ul>
+                <li><a href="#" title="Home" id="home">Home</a></li>
+                <li><a href="#" title="Old" id="old">Old</a></li>
+                <li><a href="#" title="New" id="new">New</a></li>
+                <li><a href="#" title="Large" id="large">Large</a></li>
+                <li><a href="#" title="Small" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="temples">
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Stephen Jones | Georgia, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

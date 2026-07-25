@@ -1,0 +1,43 @@
+@media screen and (min-width: 600px) {
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        align-items: start;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: .25rem;
+    }
+
+
+    nav {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        background-color: var(--primary-color);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+
+    nav a {
+        display: block;
+        padding: .5rem 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+
+}
