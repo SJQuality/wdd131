@@ -13,6 +13,11 @@ body {
     font-family: var(--body-font);
 }
 
+p {
+    font-family: var(--body-font);
+    color: var(--body-text);
+}
+
 h1,
 h2,
 h3 {
@@ -52,10 +57,12 @@ thead {
 
 .background {
     background-color: #F8F9FA;
+    color: var(--body-text);
 }
 
 .card {
     background-color: #E9ECEF;
+    color: var(--body-text);
 }
 
 .text {
