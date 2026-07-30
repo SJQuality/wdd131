@@ -1,0 +1,77 @@
+:root {
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #0B3C5D;
+    --secondary-color: #1B5E20;
+    --background: #F8F9FA;
+    --card-background: #E9ECEF;
+    --body-text: #212529;
+    --light-text: #FFFFFF;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--body-text);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #212529;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+thead {
+    background-color: #0B3C5D;
+    color: var(--light-text);
+}
+
+
+.primary {
+    background-color: #0B3C5D;
+    color: var(--light-text);
+}
+
+.secondary {
+    background-color: #1B5E20;
+    color: var(--light-text);
+}
+
+.background {
+    background-color: #F8F9FA;
+}
+
+.card {
+    background-color: #E9ECEF;
+}
+
+.text {
+    background-color: #212529;
+    color: var(--light-text);
+}
+
+.light {
+    background-color: var(--light-text);
+}
+
+figure {
+    margin: 5rem;
+}
+
+figcaption {
+    color: var(--secondary-color);
+    font-weight: 800;
+}
