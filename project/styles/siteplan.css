@@ -73,5 +73,6 @@ figure {
 
 figcaption {
     color: var(--secondary-color);
+    font-family: var(--body-font);
     font-weight: 800;
 }
