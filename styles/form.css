@@ -27,17 +27,20 @@ footer {
     border-radius: 6px;
 }
 
+
+
 fieldset {
     background-color: var(--secondary-color);
     color: var(--text1-color);
     border: #000 solid 1px;
     border-radius: 6px;
+    padding-top: 2rem;
 }
 
 .mainLabel {
     font-size: large;
     font-weight: 800;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 /* Stars */
