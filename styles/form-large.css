@@ -1,0 +1,28 @@
+@media screen and (min-width: 600px) {
+    body {
+        width: 1000px;
+        margin: 2rem;
+    }
+
+    input[type="submit"] {
+        height: 44px;
+        background-color: var(--accent2-color);
+        margin-top: .5rem;
+        width: 25%;
+        border-radius: 6px;
+        font-weight: 700;
+    }
+
+    fieldset {
+        padding-left: 4rem;
+    }
+
+    .stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+
+        height: 44px;
+
+    }
+}
