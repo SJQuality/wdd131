@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #0B4F6C;
+    /* Deep river blue */
+    --secondary-color: #01607b;
+    /*Bright water blue */
+    --accent1-color: #11662d;
+    /* Forest green */
+    --accent2-color: #ffe2a9;
+    /* Adventure gold  */
+    --text1-color: #ece7e7;
+    --text2-color: #262525;
+
+}
+
+body {
+    max-width: 400px;
+}
+
+header,
+footer {
+    display: block;
+    padding: .5rem 1rem .5rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text1-color);
+    border-radius: 6px;
+}
+
+main {
+    display: block;
+    background-color: var(--accent1-color);
+    color: var(--text1-color);
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 6px;
+    height: 300px;
+
+}

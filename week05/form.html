@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W05 Assignment: Product Review Form – Stephen Jones</title>
+    <meta name="author" content="Stephen Jones" />
+    <meta name="description" content="A product review form page to show off my form building skillz." />
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer> </script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="product" class="mainLabel">Product Name*</label>
+                <select name="product" id="product" required>
+                    <option value="products" disabled selected>Select a Product ...</option>
+                </select>
+
+                <div class="mainLabel">Overall Rating*</div>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+                <div class="mainLabel">Date of Installation*
+                    <label for="date"><input type="date" id="date" name="date" required></label>
+                </div>
+                <div class="mainLabel">Which features did you find usefull in the product?</div>
+                <div id="checkboxes">(Check all that apply)
+
+                    <label for="durability"><input type="checkbox" id="durability" name="durability"
+                            value="yes">Durability</label>
+                    <label for="use"><input type="checkbox" id="use" name="use" value="yes">Ease of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="performance"
+                            value="yes">Performance</label>
+                    <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                </div>
+                <div class="mainLabel">
+                    <label for="review">Written Review</label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
+                <div class="mainLabel">User Name
+                    <label for="uName"><input type="text" id="uName" name="uName"></label>
+                </div>
+            </fieldset>
+            <label for="giveReviewButton"><input type="submit" value="Give My Review" id="giveReviewButton"></label>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Stephen Jones | Georgia, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

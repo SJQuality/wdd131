@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #0B4F6C;
+    /* Deep river blue */
+    --secondary-color: #01607b;
+    /*Bright water blue */
+
+    --accent2-color: #ffe2a9;
+    /* Adventure gold  */
+    --text1-color: #ece7e7;
+    --text2-color: #262525;
+
+}
+
+body {
+    max-width: 400px;
+}
+
+header,
+footer {
+    display: block;
+    padding: .5rem 1rem .5rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text1-color);
+    border-radius: 6px;
+}
+
+fieldset {
+    background-color: var(--secondary-color);
+    color: var(--text1-color);
+    border: #000 solid 1px;
+    border-radius: 6px;
+}
+
+.mainLabel {
+    font-size: large;
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+/* Stars */
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    height: 44px;
+
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+
+#product,
+input[type="date"],
+input[type="textarea"],
+input[type="text"] {
+    display: block;
+    height: 44px;
+    margin: .5rem;
+    width: 90%;
+}
+
+#checkboxes {
+    font-style: italic;
+}
+
+#checkboxes label {
+    display: block;
+    margin-top: .75rem;
+    font-style: normal;
+}
+
+#checkboxes input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+}
+
+textarea {
+    margin: .5rem;
+    width: 90%;
+    height: 100px;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    height: 44px;
+    background-color: var(--accent2-color);
+    margin-top: .5rem;
+    width: 50%;
+    border-radius: 6px;
+    font-weight: 700;
+}
