@@ -84,3 +84,12 @@ figcaption {
     font-family: var(--body-font);
     font-weight: 800;
 }
+
+/* Careers */
+
+#careerCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}

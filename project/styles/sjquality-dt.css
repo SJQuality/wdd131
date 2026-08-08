@@ -1,0 +1,67 @@
+/* Desktop */
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: .25rem;
+        max-height: 100px;
+    }
+
+
+
+    nav {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        background-color: var(--primary-color);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+
+    nav a {
+        display: block;
+        padding: .5rem 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tool-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hero-content {
+        top: 20%;
+        left: 8%;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+
+
+
+}

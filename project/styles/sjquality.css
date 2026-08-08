@@ -1,0 +1,275 @@
+:root {
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #0B3C5D;
+    --secondary-color: #1B5E20;
+    --background: #F8F9FA;
+    --card-background: #E9ECEF;
+    --body-text: #212529;
+    --light-text: #FFFFFF;
+}
+
+/* ---------------Index----------------- */
+
+/* Menu */
+
+header {
+    position: relative;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+.site-logo {
+    max-width: 300px;
+    height: 100px;
+
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--accent1-color);
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    font-family: var(--heading-font);
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--light-text);
+}
+
+#menu.open::before {
+    content: "\2715";
+
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1001;
+
+    background-color: var(--primary-color);
+    list-style: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.open li {
+    justify-content: space-around;
+
+}
+
+nav.open a {
+    display: block;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+
+.active {
+    color: var(--accent1-color);
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    max-width: 450px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-content h1 {
+    font-size: 1.4rem;
+    font-family: var(--heading-font);
+}
+
+.hero-content p {
+    font-size: .9rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: .75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+.page-header {
+    text-align: center;
+    margin: 2rem;
+}
+
+section {
+    margin: 2rem;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+/* ------------- Cards------------- */
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text2-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    transition: .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+    font-family: var(--heading-font);
+}
+
+.tool-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+    text-align: center;
+}
+
+.tool-list span {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: .75rem;
+    border-radius: 6px;
+}
+
+.card img {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------Tools ----------------------*/
+
+
+
+#toolCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+#search {
+    height: 44px;
+    border-radius: 8px;
+}
+
+/* --------------------Testing -----------------------*/
+
+.page-header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.filter-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-section button {
+    margin: .5rem;
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
+
+#testingCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+
+/* --------------Careers--------------- */
+
+#careerCards article p {
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+    height: 125px;
+    padding: 1rem;
+    line-height: 1.5em;
+    border-radius: 8px;
+}
