@@ -34,3 +34,33 @@ document.querySelector(".button").addEventListener("click", (event) => {
 
 // Save last page visited
 localStorage.setItem("lastPage", "Home");
+
+
+//Subscribed Form:
+
+const form = document.querySelector("#subscribeForm");
+const message = document.querySelector("#subscribeMessage");
+
+const savedEmail = localStorage.getItem("subscriber");
+const emailName = localStorage.getItem("subscribedName");
+
+if (savedEmail) {
+    message.textContent = `Hello ${emailName}! You are subscribed as ${savedEmail}.`;
+}
+
+form.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    const email = document.querySelector("#email").value;
+    const name = document.querySelector("#name").value;
+
+    localStorage.setItem("subscriber", email);
+    localStorage.setItem("subscribedName", name);
+    localStorage.setItem("subscribed", "true");
+
+    message.textContent = `Thanks for subscribing, ${name}!`;
+
+    form.reset();
+
+});

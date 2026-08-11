@@ -209,6 +209,33 @@ section h2 {
     height: auto;
 }
 
+
+#newsletter p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+form label {
+    margin-top: .5rem;
+}
+
+form input {
+    margin: .5rem;
+    height: 44px;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
 /* ------------------Tools ----------------------*/
 
 
